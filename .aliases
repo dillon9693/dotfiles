@@ -1,0 +1,53 @@
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+#easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~~="cd ~"
+alias -- -="cd -"
+
+
+# git aliases
+alias g="git"
+alias gc="git checkout"
+alias gs="git status"
+alias gd="git diff"
+alias ga="git add"
+alias gaa="git add -A"
+alias gra="git reset HEAD ."
+
+alias mv='mv -v'
+alias rm='rm -i -v'
+alias cp='cp -v'
+alias sshcoll='ssh dkerr@mindedgecollege.com'
+
+# allow aliases to be sudo'ed
+alias sudo="sudo "
+
+alias update="sudo apt update && sudo apt upgrade"
+
+#get my ip
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+alias startvpn='openvpn --config /home/dill/keys/dill-laptop.ovpn'
