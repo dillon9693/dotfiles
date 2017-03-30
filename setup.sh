@@ -4,6 +4,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 for file in .{aliases,bash_profile,bashrc,functions,git-completion,profile}; do
+  rm -f $HOME/$file
   ln -s $DIR/$file $HOME/$file
 done
 
