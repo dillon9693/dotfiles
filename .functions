@@ -48,3 +48,8 @@ function s() {
     subl "$@";
   fi;
 }
+
+# Global Laravel Homestead support
+function homestead() {
+  ( cd ~/Homestead && vagrant $* )
+}

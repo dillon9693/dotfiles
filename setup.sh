@@ -1,3 +1,6 @@
+# Clone the pyenv directory into the home directory
+git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
+
 # Bash Script to create symlinks for file in current directory
 # in the current user's home directory
 
