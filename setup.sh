@@ -1,6 +1,10 @@
 # Clone the pyenv directory into the home directory
 git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
 
+# @TODO: can we always get the latest version?
+# Install NVM
+sudo wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+
 # Bash Script to create symlinks for file in current directory
 # in the current user's home directory
 
