@@ -6,7 +6,7 @@ git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-for file in .{aliases,bash_profile,bashrc,functions,git-completion,profile}; do
+for file in .{aliases,bash_profile,bashrc,functions,git-completion,profile,vimrc}; do
   rm -f $HOME/$file
   ln -s $DIR/$file $HOME/$file
 done
