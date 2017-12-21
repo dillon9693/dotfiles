@@ -53,3 +53,8 @@ function s() {
 function homestead() {
   ( cd ~/Homestead && vagrant $* )
 }
+
+# apt search installed packages
+function apt-search() {
+  dpkg --list | grep $*
+}
