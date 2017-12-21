@@ -25,7 +25,6 @@ alias gs="git status"
 alias mv='mv -v'
 alias rm='rm -i -v'
 alias cp='cp -v'
-alias sshcoll='ssh dkerr@mindedgecollege.com'
 
 # allow aliases to be sudo'ed
 alias sudo="sudo "
