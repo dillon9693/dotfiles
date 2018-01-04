@@ -14,9 +14,11 @@ fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-for file in .{aliases,bash_profile,bashrc,functions,git-completion,profile,vimrc}; do
+for file in .{aliases,bash_profile,bashrc,functions,git-completion,gitignore_global,profile,vimrc}; do
   rm -f $HOME/$file
   ln -s $DIR/$file $HOME/$file
 done
+
+git config --global core.excludesfile $HOME/.gitignore_global
 
 echo "Symlinks created!"
