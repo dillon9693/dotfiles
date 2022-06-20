@@ -1,0 +1,25 @@
+[user]
+	name = Dillon Kerr
+	email = dillon.p.kerr@gmail.com # TODO set based on var
+[core]
+    pager = less
+	excludesfile = /Users/dillkerr/.gitignore_global
+[push]
+    default = simple
+[pull]
+    rebase = false
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	a = !git add
+	aa = !git add -A
+	c = !git checkout
+	d = !git diff
+	dd = !git diff | git-split-diffs --color | less -RFX
+	dag = log --graph --format 'format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%c(reset)%n%s' --date-order
+	dc = !git diff --cached
+	fri = !git fetch && git rebase -i
+	p = !git pull
+	ra = !git reset HEAD .
+	s = !git status
+[init]
+	defaultBranch = mainline

@@ -57,3 +57,5 @@ alias startvpn='openvpn --config /home/dill/keys/dill-laptop.ovpn'
 # alias docker-compose='docker-compose.exe'
 
 alias python="python3"
+
+alias zshsource="source ~/.zshrc"

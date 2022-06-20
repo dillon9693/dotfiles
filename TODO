@@ -1,6 +1,6 @@
-- Alias python to python3
-- xcode-select --install
 - git config
-    - git config --global user.name ""
     - git config --global user.email ""
-- zsh extension (zsh-autosuggestions, zsh-syntax-highlighting)
+- gitconfig file: copy
+AWS CLI
+- https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+- https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html

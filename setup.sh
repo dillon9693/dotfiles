@@ -14,6 +14,7 @@ rm -rf vim-colors-solarized/
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+
 # Bash Script to create symlinks for file in current directory
 # in the current user's home directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -28,4 +29,14 @@ git config --global core.excludesfile $HOME/.gitignore_global
 echo ""
 echo "#################"
 echo "Symlinks created!"
+echo "#################"
+
+echo "Setting up Xcode"
+xcode-select --install
+echo "Xcode setup complete!"
+
+git config --global user.name "Dillon Kerr"
+
+echo "#################"
+echo "Done!"
 echo "#################"
