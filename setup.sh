@@ -1,6 +1,11 @@
 # Install any dependencies
 brew install nvm
 
+echo "Installing Fira Code font"
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
+echo "Fira Code font installed. Make sure to update programs (e.g. ITerm, VS Code) to use it!"
+
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
