@@ -3,3 +3,4 @@
 - git config
     - git config --global user.name ""
     - git config --global user.email ""
+- zsh extension (zsh-autosuggestions, zsh-syntax-highlighting)

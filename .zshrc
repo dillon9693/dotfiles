@@ -123,11 +123,6 @@ if [ -f ~/.git-completion ]; then
   __git_complete gc _git_checkout
 fi;
 
-# pyenv setup
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 # Config for Chromium on M1 Mac
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`

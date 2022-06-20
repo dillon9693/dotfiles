@@ -10,6 +10,10 @@ mkdir -p ~/.vim/colors
 cp vim-colors-solarized/colors/solarized.vim ~/.vim/colors
 rm -rf vim-colors-solarized/
 
+# Install zsh extensions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # Bash Script to create symlinks for file in current directory
 # in the current user's home directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
