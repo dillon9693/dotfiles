@@ -129,3 +129,9 @@ export PUPPETEER_EXECUTABLE_PATH=`which chromium`
 
 # Fig post block. Keep at the bottom of this file.
 . "$HOME/.fig/shell/zshrc.post.zsh"source /usr/local/opt/nvm/nvm.sh
+
+# load zsh-completions
+autoload -U compinit && compinit
+
+# use starship theme (needs to be at the end)
+eval "$(starship init zsh)"
