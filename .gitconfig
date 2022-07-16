@@ -1,6 +1,6 @@
 [user]
 	name = Dillon Kerr
-	email = dillon.p.kerr@gmail.com # TODO set based on var
+	email =
 [core]
     pager = less
 	excludesfile = /Users/dillkerr/.gitignore_global

@@ -1,3 +1,9 @@
+# Enter email to be used for Git
+echo "Enter email below:"
+read -p 'Email: ' useremail
+
+echo $useremail
+
 # Install any dependencies
 brew install nvm
 
@@ -40,7 +46,10 @@ echo "Setting up Xcode"
 xcode-select --install
 echo "Xcode setup complete!"
 
+cp .gitconfig ~/.gitconfig
+
 git config --global user.name "Dillon Kerr"
+git config --global user.email $useremail
 
 echo "#################"
 echo "Done!"
