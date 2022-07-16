@@ -128,7 +128,7 @@ export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
 
 # Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"source /usr/local/opt/nvm/nvm.sh
+# . "$HOME/.fig/shell/zshrc.post.zsh"source /usr/local/opt/nvm/nvm.sh
 
 # load zsh-completions
 autoload -U compinit && compinit
