@@ -55,3 +55,7 @@ alias startvpn='openvpn --config /home/dill/keys/dill-laptop.ovpn'
 # Aliases for Ubuntu WSL
 # alias docker='docker.exe'
 # alias docker-compose='docker-compose.exe'
+
+alias python="python3"
+
+alias zshsource="source ~/.zshrc"

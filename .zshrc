@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 # for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-for file in ~/.{aliases,functions}; do
+for file in ~/.{aliases,functions,setup_amazon}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -123,14 +123,11 @@ if [ -f ~/.git-completion ]; then
   __git_complete gc _git_checkout
 fi;
 
-# pyenv setup
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# Config for Chromium on M1 Mac
-export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-export PUPPETEER_EXECUTABLE_PATH=`which chromium`
-
 # Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
+# . "$HOME/.fig/shell/zshrc.post.zsh"source /usr/local/opt/nvm/nvm.sh
+
+# load zsh-completions
+autoload -U compinit && compinit
+
+# use starship theme (needs to be at the end)
+eval "$(starship init zsh)"
