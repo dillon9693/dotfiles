@@ -123,10 +123,6 @@ if [ -f ~/.git-completion ]; then
   __git_complete gc _git_checkout
 fi;
 
-# Config for Chromium on M1 Mac
-export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-export PUPPETEER_EXECUTABLE_PATH=`which chromium`
-
 # Fig post block. Keep at the bottom of this file.
 # . "$HOME/.fig/shell/zshrc.post.zsh"source /usr/local/opt/nvm/nvm.sh
 
